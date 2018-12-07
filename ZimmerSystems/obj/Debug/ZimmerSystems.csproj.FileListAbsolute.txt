@@ -1,0 +1,12 @@
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\bin\Debug\ZimmerSystems.exe.config
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\bin\Debug\ZimmerSystems.exe
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\bin\Debug\ZimmerSystems.pdb
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\obj\Debug\ZimmerSystems.csprojAssemblyReference.cache
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\obj\Debug\ZimmerSystems.Properties.Resources.resources
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\obj\Debug\ZimmerSystems.csproj.GenerateResource.cache
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\obj\Debug\ZimmerSystems.csproj.CoreCompileInputs.cache
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\obj\Debug\ZimmerSystems.exe
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\obj\Debug\ZimmerSystems.pdb
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\obj\Debug\ZimmerSystems.FrmInicio.resources
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\obj\Debug\ZimmerSystems.FrmMenuPrincipal.resources
+C:\Users\alan.castro\source\repos\ZimmerSystems\ZimmerSystems\obj\Debug\ZimmerSystems.FrmCalendario.resources
