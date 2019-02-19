@@ -45,60 +45,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmCalendario.cs">
+    <Compile Include="Controllers\Login.cs" />
+    <Compile Include="Views\FrmCalendario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCalendario.Designer.cs">
+    <Compile Include="Views\FrmCalendario.Designer.cs">
       <DependentUpon>FrmCalendario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmHistorial.cs">
+    <Compile Include="Views\FrmHistorial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmHistorial.Designer.cs">
+    <Compile Include="Views\FrmHistorial.Designer.cs">
       <DependentUpon>FrmHistorial.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmInicio.cs">
+    <Compile Include="Views\FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmInicio.Designer.cs">
+    <Compile Include="Views\FrmInicio.Designer.cs">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMenuPrincipal.cs">
+    <Compile Include="Views\FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenuPrincipal.Designer.cs">
+    <Compile Include="Views\FrmMenuPrincipal.Designer.cs">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmReporte.cs">
+    <Compile Include="Views\FrmReporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmReporte.Designer.cs">
+    <Compile Include="Views\FrmReporte.Designer.cs">
       <DependentUpon>FrmReporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSolicitud.cs">
+    <Compile Include="Views\FrmSolicitud.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSolicitud.Designer.cs">
+    <Compile Include="Views\FrmSolicitud.Designer.cs">
       <DependentUpon>FrmSolicitud.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmCalendario.resx">
+    <EmbeddedResource Include="Views\FrmCalendario.resx">
       <DependentUpon>FrmCalendario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmHistorial.resx">
+    <EmbeddedResource Include="Views\FrmHistorial.resx">
       <DependentUpon>FrmHistorial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmInicio.resx">
+    <EmbeddedResource Include="Views\FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuPrincipal.resx">
+    <EmbeddedResource Include="Views\FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmReporte.resx">
+    <EmbeddedResource Include="Views\FrmReporte.resx">
       <DependentUpon>FrmReporte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSolicitud.resx">
+    <EmbeddedResource Include="Views\FrmSolicitud.resx">
       <DependentUpon>FrmSolicitud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -126,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\zs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataBases\ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

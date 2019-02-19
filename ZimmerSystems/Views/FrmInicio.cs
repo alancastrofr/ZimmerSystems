@@ -22,10 +22,9 @@ namespace ZimmerSystems
             pictureBox1.Image = Properties.Resources.zs;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            FrmMenuPrincipal frm = new FrmMenuPrincipal();
-            frm.Show();
+            
         }
     }
 }
