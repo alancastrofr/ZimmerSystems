@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZimmerSystems.Controllers;
+using ZimmerSystems.DataBases.ViewModel;
 
 namespace ZimmerSystems
 {
@@ -28,8 +22,25 @@ namespace ZimmerSystems
             try
             {
                 Login ln = new Login();
-                ln.validateConnection();
-                MessageBox.Show("Conexion Estable");
+                if (ln.ValidationEmptyText(txtUser.Text, txtPassword.Text))
+                {
+                    UserVM UserVM = ln.ConsultarUsuario(txtUser.Text, txtPassword.Text);
+                    if (!UserVM.ID.Equals(""))
+                    {
+                        if (UserVM.Active)
+                        {
+                            FrmMenuPrincipal fr = new FrmMenuPrincipal();
+                            fr.Show();
+                            this.Hide();
+                        }
+                        else
+                            MessageBox.Show("Usuario Bloqueado");
+                    }
+                    else
+                        MessageBox.Show("Usuario y/o Contraseña Incorrectos");
+                }
+                else
+                    MessageBox.Show("Usuario y/o Contraseña Vacios");
             }
             catch (Exception ex)
             {
