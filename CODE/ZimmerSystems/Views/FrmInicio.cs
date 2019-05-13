@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZimmerSystems.Controllers;
 
 namespace ZimmerSystems
 {
@@ -24,6 +25,16 @@ namespace ZimmerSystems
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Login ln = new Login();
+                ln.validateConnection();
+                MessageBox.Show("Conexion Estable");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error conexion:" + ex.ToString());             
+            }
             
         }
     }
