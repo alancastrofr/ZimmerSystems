@@ -41,23 +41,24 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.txtFolio = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txtFechaRegreso = new System.Windows.Forms.TextBox();
+            this.txtEquipo = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.txtColor = new System.Windows.Forms.TextBox();
+            this.txtSerie = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.txtMotivoCancelacion = new System.Windows.Forms.TextBox();
+            this.lblMotivoCancelacion = new System.Windows.Forms.Label();
+            this.btnSolicitud = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -96,9 +97,9 @@
             this.label4.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(42, 276);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 22);
+            this.label4.Size = new System.Drawing.Size(59, 22);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Fecha de Entrega:";
+            this.label4.Text = "Fecha:";
             // 
             // label5
             // 
@@ -190,107 +191,107 @@
             this.label13.TabIndex = 12;
             this.label13.Text = "Folio:";
             // 
-            // label14
+            // lblTitle
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Californian FB", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(315, 9);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(211, 31);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "Cancelar Solicitud";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Californian FB", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(315, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(211, 31);
+            this.lblTitle.TabIndex = 13;
+            this.lblTitle.Text = "Cancelar Solicitud";
             // 
-            // textBox1
+            // txtFolio
             // 
-            this.textBox1.Location = new System.Drawing.Point(215, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 20);
-            this.textBox1.TabIndex = 14;
+            this.txtFolio.Location = new System.Drawing.Point(215, 83);
+            this.txtFolio.Name = "txtFolio";
+            this.txtFolio.Size = new System.Drawing.Size(216, 20);
+            this.txtFolio.TabIndex = 14;
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(215, 129);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 20);
-            this.textBox2.TabIndex = 15;
+            this.txtNombre.Location = new System.Drawing.Point(215, 129);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(216, 20);
+            this.txtNombre.TabIndex = 15;
             // 
-            // textBox3
+            // txtTelefono
             // 
-            this.textBox3.Location = new System.Drawing.Point(215, 201);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(216, 20);
-            this.textBox3.TabIndex = 16;
+            this.txtTelefono.Location = new System.Drawing.Point(215, 201);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(216, 20);
+            this.txtTelefono.TabIndex = 16;
             // 
-            // textBox4
+            // txtApellido
             // 
-            this.textBox4.Location = new System.Drawing.Point(215, 164);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(216, 20);
-            this.textBox4.TabIndex = 17;
+            this.txtApellido.Location = new System.Drawing.Point(215, 164);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(216, 20);
+            this.txtApellido.TabIndex = 17;
             // 
-            // textBox5
+            // txtDireccion
             // 
-            this.textBox5.Location = new System.Drawing.Point(215, 238);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(216, 20);
-            this.textBox5.TabIndex = 18;
+            this.txtDireccion.Location = new System.Drawing.Point(215, 238);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(216, 20);
+            this.txtDireccion.TabIndex = 18;
             // 
-            // textBox6
+            // txtFecha
             // 
-            this.textBox6.Location = new System.Drawing.Point(215, 276);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(216, 20);
-            this.textBox6.TabIndex = 19;
+            this.txtFecha.Location = new System.Drawing.Point(215, 276);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(216, 20);
+            this.txtFecha.TabIndex = 19;
             // 
-            // textBox7
+            // txtFechaRegreso
             // 
-            this.textBox7.Location = new System.Drawing.Point(236, 314);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(216, 20);
-            this.textBox7.TabIndex = 20;
+            this.txtFechaRegreso.Location = new System.Drawing.Point(236, 314);
+            this.txtFechaRegreso.Name = "txtFechaRegreso";
+            this.txtFechaRegreso.Size = new System.Drawing.Size(195, 20);
+            this.txtFechaRegreso.TabIndex = 20;
             // 
-            // textBox8
+            // txtEquipo
             // 
-            this.textBox8.Location = new System.Drawing.Point(545, 128);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(216, 20);
-            this.textBox8.TabIndex = 21;
+            this.txtEquipo.Location = new System.Drawing.Point(545, 128);
+            this.txtEquipo.Name = "txtEquipo";
+            this.txtEquipo.Size = new System.Drawing.Size(216, 20);
+            this.txtEquipo.TabIndex = 21;
             // 
-            // textBox9
+            // txtModelo
             // 
-            this.textBox9.Location = new System.Drawing.Point(545, 164);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(216, 20);
-            this.textBox9.TabIndex = 22;
+            this.txtModelo.Location = new System.Drawing.Point(545, 164);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(216, 20);
+            this.txtModelo.TabIndex = 22;
             // 
-            // textBox10
+            // txtMarca
             // 
-            this.textBox10.Location = new System.Drawing.Point(545, 201);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(216, 20);
-            this.textBox10.TabIndex = 23;
+            this.txtMarca.Location = new System.Drawing.Point(545, 201);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(216, 20);
+            this.txtMarca.TabIndex = 23;
             // 
-            // textBox11
+            // txtColor
             // 
-            this.textBox11.Location = new System.Drawing.Point(545, 238);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(216, 20);
-            this.textBox11.TabIndex = 24;
+            this.txtColor.Location = new System.Drawing.Point(545, 238);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.Size = new System.Drawing.Size(216, 20);
+            this.txtColor.TabIndex = 24;
             // 
-            // textBox12
+            // txtSerie
             // 
-            this.textBox12.Location = new System.Drawing.Point(545, 279);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(216, 20);
-            this.textBox12.TabIndex = 25;
+            this.txtSerie.Location = new System.Drawing.Point(545, 279);
+            this.txtSerie.Name = "txtSerie";
+            this.txtSerie.Size = new System.Drawing.Size(216, 20);
+            this.txtSerie.TabIndex = 25;
             // 
-            // textBox13
+            // txtDescripcion
             // 
-            this.textBox13.Location = new System.Drawing.Point(473, 336);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(288, 91);
-            this.textBox13.TabIndex = 26;
+            this.txtDescripcion.Location = new System.Drawing.Point(473, 336);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(288, 91);
+            this.txtDescripcion.TabIndex = 26;
             // 
             // button1
             // 
@@ -301,23 +302,33 @@
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox14
+            // txtMotivoCancelacion
             // 
-            this.textBox14.Location = new System.Drawing.Point(48, 380);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(394, 47);
-            this.textBox14.TabIndex = 29;
+            this.txtMotivoCancelacion.Location = new System.Drawing.Point(48, 380);
+            this.txtMotivoCancelacion.Multiline = true;
+            this.txtMotivoCancelacion.Name = "txtMotivoCancelacion";
+            this.txtMotivoCancelacion.Size = new System.Drawing.Size(394, 47);
+            this.txtMotivoCancelacion.TabIndex = 29;
             // 
-            // label16
+            // lblMotivoCancelacion
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(44, 355);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(186, 22);
-            this.label16.TabIndex = 30;
-            this.label16.Text = "Motivo de Cancelacion";
+            this.lblMotivoCancelacion.AutoSize = true;
+            this.lblMotivoCancelacion.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMotivoCancelacion.Location = new System.Drawing.Point(44, 355);
+            this.lblMotivoCancelacion.Name = "lblMotivoCancelacion";
+            this.lblMotivoCancelacion.Size = new System.Drawing.Size(186, 22);
+            this.lblMotivoCancelacion.TabIndex = 30;
+            this.lblMotivoCancelacion.Text = "Motivo de Cancelacion";
+            // 
+            // btnSolicitud
+            // 
+            this.btnSolicitud.Location = new System.Drawing.Point(568, 80);
+            this.btnSolicitud.Name = "btnSolicitud";
+            this.btnSolicitud.Size = new System.Drawing.Size(110, 23);
+            this.btnSolicitud.TabIndex = 31;
+            this.btnSolicitud.Text = "Solicitud";
+            this.btnSolicitud.UseVisualStyleBackColor = true;
+            this.btnSolicitud.Click += new System.EventHandler(this.btnSolicitud_Click);
             // 
             // FrmSolicitud
             // 
@@ -325,23 +336,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.btnSolicitud);
+            this.Controls.Add(this.lblMotivoCancelacion);
+            this.Controls.Add(this.txtMotivoCancelacion);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.txtSerie);
+            this.Controls.Add(this.txtColor);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.txtModelo);
+            this.Controls.Add(this.txtEquipo);
+            this.Controls.Add(this.txtFechaRegreso);
+            this.Controls.Add(this.txtFecha);
+            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtFolio);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -357,6 +369,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmSolicitud";
             this.Text = "FrmSolicitud";
+            this.Load += new System.EventHandler(this.FrmSolicitud_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,22 +390,23 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.TextBox txtFolio;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.TextBox txtFechaRegreso;
+        private System.Windows.Forms.TextBox txtEquipo;
+        private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.TextBox txtColor;
+        private System.Windows.Forms.TextBox txtSerie;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtMotivoCancelacion;
+        private System.Windows.Forms.Label lblMotivoCancelacion;
+        private System.Windows.Forms.Button btnSolicitud;
     }
 }

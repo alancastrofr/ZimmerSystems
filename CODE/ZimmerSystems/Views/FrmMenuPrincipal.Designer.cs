@@ -30,14 +30,14 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.calendarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.almacemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaSolicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarSolicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancelarSolicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.almacemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarReporteSemanalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarReporteMensualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.historialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.versionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +68,28 @@
             this.calendarioToolStripMenuItem.Name = "calendarioToolStripMenuItem";
             this.calendarioToolStripMenuItem.Size = new System.Drawing.Size(107, 26);
             this.calendarioToolStripMenuItem.Text = "Calendario";
-            this.calendarioToolStripMenuItem.Click += new System.EventHandler(this.calendarioToolStripMenuItem_Click);
+            this.calendarioToolStripMenuItem.Click += new System.EventHandler(this.CalendarioToolStripMenuItem_Click);
+            // 
+            // nuevaSolicitudToolStripMenuItem
+            // 
+            this.nuevaSolicitudToolStripMenuItem.Name = "nuevaSolicitudToolStripMenuItem";
+            this.nuevaSolicitudToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
+            this.nuevaSolicitudToolStripMenuItem.Text = "Nueva Solicitud";
+            this.nuevaSolicitudToolStripMenuItem.Click += new System.EventHandler(this.NuevaSolicitudToolStripMenuItem_Click);
+            // 
+            // modificarSolicitudToolStripMenuItem
+            // 
+            this.modificarSolicitudToolStripMenuItem.Name = "modificarSolicitudToolStripMenuItem";
+            this.modificarSolicitudToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
+            this.modificarSolicitudToolStripMenuItem.Text = "Modificar Solicitud";
+            this.modificarSolicitudToolStripMenuItem.Click += new System.EventHandler(this.modificarSolicitudToolStripMenuItem_Click);
+            // 
+            // cancelarSolicitudToolStripMenuItem
+            // 
+            this.cancelarSolicitudToolStripMenuItem.Name = "cancelarSolicitudToolStripMenuItem";
+            this.cancelarSolicitudToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
+            this.cancelarSolicitudToolStripMenuItem.Text = "Cancelar Solicitud";
+            this.cancelarSolicitudToolStripMenuItem.Click += new System.EventHandler(this.cancelarSolicitudToolStripMenuItem_Click);
             // 
             // almacemToolStripMenuItem
             // 
@@ -78,42 +99,7 @@
             this.almacemToolStripMenuItem.Name = "almacemToolStripMenuItem";
             this.almacemToolStripMenuItem.Size = new System.Drawing.Size(87, 26);
             this.almacemToolStripMenuItem.Text = "Almacen";
-            this.almacemToolStripMenuItem.Click += new System.EventHandler(this.almacemToolStripMenuItem_Click);
-            // 
-            // historialToolStripMenuItem
-            // 
-            this.historialToolStripMenuItem.Name = "historialToolStripMenuItem";
-            this.historialToolStripMenuItem.Size = new System.Drawing.Size(89, 26);
-            this.historialToolStripMenuItem.Text = "Historial";
-            this.historialToolStripMenuItem.Click += new System.EventHandler(this.historialToolStripMenuItem_Click);
-            // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.accercaDeToolStripMenuItem,
-            this.versionToolStripMenuItem,
-            this.contactoToolStripMenuItem});
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // nuevaSolicitudToolStripMenuItem
-            // 
-            this.nuevaSolicitudToolStripMenuItem.Name = "nuevaSolicitudToolStripMenuItem";
-            this.nuevaSolicitudToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
-            this.nuevaSolicitudToolStripMenuItem.Text = "Nueva Solicitud";
-            // 
-            // modificarSolicitudToolStripMenuItem
-            // 
-            this.modificarSolicitudToolStripMenuItem.Name = "modificarSolicitudToolStripMenuItem";
-            this.modificarSolicitudToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
-            this.modificarSolicitudToolStripMenuItem.Text = "Modificar Solicitud";
-            // 
-            // cancelarSolicitudToolStripMenuItem
-            // 
-            this.cancelarSolicitudToolStripMenuItem.Name = "cancelarSolicitudToolStripMenuItem";
-            this.cancelarSolicitudToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
-            this.cancelarSolicitudToolStripMenuItem.Text = "Cancelar Solicitud";
+            this.almacemToolStripMenuItem.Click += new System.EventHandler(this.AlmacemToolStripMenuItem_Click);
             // 
             // generarReporteSemanalToolStripMenuItem
             // 
@@ -127,22 +113,39 @@
             this.generarReporteMensualToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.generarReporteMensualToolStripMenuItem.Text = "Generar Reporte Mensual";
             // 
+            // historialToolStripMenuItem
+            // 
+            this.historialToolStripMenuItem.Name = "historialToolStripMenuItem";
+            this.historialToolStripMenuItem.Size = new System.Drawing.Size(89, 26);
+            this.historialToolStripMenuItem.Text = "Historial";
+            this.historialToolStripMenuItem.Click += new System.EventHandler(this.HistorialToolStripMenuItem_Click);
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.accercaDeToolStripMenuItem,
+            this.versionToolStripMenuItem,
+            this.contactoToolStripMenuItem});
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
             // accercaDeToolStripMenuItem
             // 
             this.accercaDeToolStripMenuItem.Name = "accercaDeToolStripMenuItem";
-            this.accercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.accercaDeToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.accercaDeToolStripMenuItem.Text = "Soporte";
             // 
             // versionToolStripMenuItem
             // 
             this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
-            this.versionToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.versionToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.versionToolStripMenuItem.Text = "Version";
             // 
             // contactoToolStripMenuItem
             // 
             this.contactoToolStripMenuItem.Name = "contactoToolStripMenuItem";
-            this.contactoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.contactoToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.contactoToolStripMenuItem.Text = "Contacto";
             // 
             // FrmMenuPrincipal

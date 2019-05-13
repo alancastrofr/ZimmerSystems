@@ -19,6 +19,7 @@ namespace ZimmerSystems.DataBases.ViewModel
         public string Phone { get; set; }
         public string CelPhone { get; set; }
         public bool Active { get; set; }
+        public int Pantalla { get; set; }
 
         public UserVM() { }
 
@@ -35,6 +36,7 @@ namespace ZimmerSystems.DataBases.ViewModel
             this.Phone = u.Phone;
             this.CelPhone = u.CelPhone;
             this.Active = u.Active;
+            this.Pantalla = u.Pantalla;
         }
 
     }

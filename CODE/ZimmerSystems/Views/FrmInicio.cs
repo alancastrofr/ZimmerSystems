@@ -12,6 +12,8 @@ namespace ZimmerSystems
             InitializeComponent();
         }
 
+        public UserVM UserVM = new UserVM();
+
         private void Form1_Load(object sender, EventArgs e)
         {
             pictureBox1.Image = Properties.Resources.zs;
@@ -21,10 +23,10 @@ namespace ZimmerSystems
         {
             try
             {
-                Login ln = new Login();
+                LoginController ln = new LoginController();
                 if (ln.ValidationEmptyText(txtUser.Text, txtPassword.Text))
                 {
-                    UserVM UserVM = ln.ConsultarUsuario(txtUser.Text, txtPassword.Text);
+                    UserVM = ln.ConsultarUsuario(txtUser.Text, txtPassword.Text);
                     if (!UserVM.ID.Equals(""))
                     {
                         if (UserVM.Active)

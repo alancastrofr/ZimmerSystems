@@ -5,7 +5,7 @@ using ZimmerSystems.DataBases.ViewModel;
 
 namespace ZimmerSystems.Controllers
 {
-    public class Login
+    public class LoginController
     {
         public UserVM ConsultarUsuario(string user, string password)
         {
