@@ -25,8 +25,8 @@ namespace ZimmerSystems
 
         private void CalendarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCalendario frmCalendario = new FrmCalendario();
-            frmCalendario.Show();
+            //FrmCalendario frmCalendario = new FrmCalendario();
+            //frmCalendario.Show();
         }
 
         private void HistorialToolStripMenuItem_Click(object sender, EventArgs e)

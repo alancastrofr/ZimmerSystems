@@ -12,7 +12,7 @@ namespace ZimmerSystems
             InitializeComponent();
         }
 
-        public UserVM UserVM = new UserVM();
+        public static UserVM UserVM = new UserVM();
 
         private void Form1_Load(object sender, EventArgs e)
         {

@@ -12,7 +12,7 @@ namespace ZimmerSystems
             InitializeComponent();
         }
 
-        FrmInicio Frm = new FrmInicio();
+        UserVM VM = ZimmerSystems.FrmInicio.UserVM;
 
         private void FrmSolicitud_Load(object sender, EventArgs e)
         {
@@ -22,7 +22,7 @@ namespace ZimmerSystems
 
         private void ConfigurarPantalla()
         {
-            switch (Frm.UserVM.Pantalla)
+            switch (VM.Pantalla)
             {
                 case 1:
                     lblTitle.Text = "Nueva Solicitud";
@@ -31,6 +31,7 @@ namespace ZimmerSystems
                     lblMotivoCancelacion.Visible = false;
                     txtFolio.Enabled = false;
                     btnSolicitud.Text = "Crear Solicitud";
+                    btnBuscar.Hide();
                     break;
                 case 2:
                     lblTitle.Text = "Modificar Solicitud";
@@ -76,7 +77,7 @@ namespace ZimmerSystems
 
         private void btnSolicitud_Click(object sender, EventArgs e)
         {
-            switch (Frm.UserVM.Pantalla)
+            switch (VM.Pantalla)
             {
                 case 1: ReglasnCrearSolicitud();
                     break;

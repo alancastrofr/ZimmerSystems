@@ -15,8 +15,8 @@ namespace ZimmerSystems.Controllers
                 using (SqlConnection Conn = Conection.ObtnerConecion())
                 {
                     SqlCommand comando = new SqlCommand(string.Format(
-                        "SELECT ID, USERNAME, PASSWORD, FIRST_NAME, LAST_NAME, ROLID, ADDRESS, ZIPCODE, PHONE, CELPHONE, ACTIVE FROM ZimmerSystems.dbo.CAT_USERS " +
-                        "WHERE ZimmerSystems.dbo.CAT_USERS.USERNAME = {0} , ZimmerSystems.dbo.CAT_USERS.PASSWORD = {1} ", user, password), Conn);
+                        "SELECT * FROM CAT_USERS WHERE CAT_USERS.USERNAME = '{0}' AND PASSWORD = '{1}' ", user, password), Conn);
+                        
                     SqlDataReader reader = comando.ExecuteReader();
 
                     while (reader.Read())

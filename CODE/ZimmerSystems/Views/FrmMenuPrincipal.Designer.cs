@@ -66,8 +66,8 @@
             this.modificarSolicitudToolStripMenuItem,
             this.cancelarSolicitudToolStripMenuItem});
             this.calendarioToolStripMenuItem.Name = "calendarioToolStripMenuItem";
-            this.calendarioToolStripMenuItem.Size = new System.Drawing.Size(107, 26);
-            this.calendarioToolStripMenuItem.Text = "Calendario";
+            this.calendarioToolStripMenuItem.Size = new System.Drawing.Size(105, 26);
+            this.calendarioToolStripMenuItem.Text = "Solicitudes";
             this.calendarioToolStripMenuItem.Click += new System.EventHandler(this.CalendarioToolStripMenuItem_Click);
             // 
             // nuevaSolicitudToolStripMenuItem
@@ -133,19 +133,19 @@
             // accercaDeToolStripMenuItem
             // 
             this.accercaDeToolStripMenuItem.Name = "accercaDeToolStripMenuItem";
-            this.accercaDeToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.accercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.accercaDeToolStripMenuItem.Text = "Soporte";
             // 
             // versionToolStripMenuItem
             // 
             this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
-            this.versionToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.versionToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.versionToolStripMenuItem.Text = "Version";
             // 
             // contactoToolStripMenuItem
             // 
             this.contactoToolStripMenuItem.Name = "contactoToolStripMenuItem";
-            this.contactoToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.contactoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.contactoToolStripMenuItem.Text = "Contacto";
             // 
             // FrmMenuPrincipal

@@ -55,7 +55,7 @@
             this.txtColor = new System.Windows.Forms.TextBox();
             this.txtSerie = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.txtMotivoCancelacion = new System.Windows.Forms.TextBox();
             this.lblMotivoCancelacion = new System.Windows.Forms.Label();
             this.btnSolicitud = new System.Windows.Forms.Button();
@@ -293,14 +293,14 @@
             this.txtDescripcion.Size = new System.Drawing.Size(288, 91);
             this.txtDescripcion.TabIndex = 26;
             // 
-            // button1
+            // btnBuscar
             // 
-            this.button1.Location = new System.Drawing.Point(473, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuscar.Location = new System.Drawing.Point(473, 80);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 27;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // txtMotivoCancelacion
             // 
@@ -339,7 +339,7 @@
             this.Controls.Add(this.btnSolicitud);
             this.Controls.Add(this.lblMotivoCancelacion);
             this.Controls.Add(this.txtMotivoCancelacion);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtSerie);
             this.Controls.Add(this.txtColor);
@@ -404,7 +404,7 @@
         private System.Windows.Forms.TextBox txtColor;
         private System.Windows.Forms.TextBox txtSerie;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtMotivoCancelacion;
         private System.Windows.Forms.Label lblMotivoCancelacion;
         private System.Windows.Forms.Button btnSolicitud;
