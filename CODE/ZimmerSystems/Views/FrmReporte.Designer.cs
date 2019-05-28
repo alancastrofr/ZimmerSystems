@@ -33,7 +33,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnGenerarReporte = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -84,15 +84,16 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Fecha Final";
             // 
-            // button1
+            // BtnGenerarReporte
             // 
-            this.button1.Font = new System.Drawing.Font("Californian FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(335, 346);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 43);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Generar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnGenerarReporte.Font = new System.Drawing.Font("Californian FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGenerarReporte.Location = new System.Drawing.Point(335, 346);
+            this.BtnGenerarReporte.Name = "BtnGenerarReporte";
+            this.BtnGenerarReporte.Size = new System.Drawing.Size(116, 43);
+            this.BtnGenerarReporte.TabIndex = 5;
+            this.BtnGenerarReporte.Text = "Generar";
+            this.BtnGenerarReporte.UseVisualStyleBackColor = true;
+            this.BtnGenerarReporte.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label4
             // 
@@ -150,7 +151,7 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnGenerarReporte);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
@@ -170,7 +171,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnGenerarReporte;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;

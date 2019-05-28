@@ -47,8 +47,6 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtFecha = new System.Windows.Forms.TextBox();
-            this.txtFechaRegreso = new System.Windows.Forms.TextBox();
             this.txtEquipo = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.txtMarca = new System.Windows.Forms.TextBox();
@@ -59,6 +57,21 @@
             this.txtMotivoCancelacion = new System.Windows.Forms.TextBox();
             this.lblMotivoCancelacion = new System.Windows.Forms.Label();
             this.btnSolicitud = new System.Windows.Forms.Button();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaRegreso = new System.Windows.Forms.DateTimePicker();
+            this.errorNombre = new System.Windows.Forms.Label();
+            this.errorApellido = new System.Windows.Forms.Label();
+            this.errorTelefono = new System.Windows.Forms.Label();
+            this.errorDireccion = new System.Windows.Forms.Label();
+            this.errorFecha = new System.Windows.Forms.Label();
+            this.errorFechaRetorno = new System.Windows.Forms.Label();
+            this.errorMotivoCancelacion = new System.Windows.Forms.Label();
+            this.errorEquipo = new System.Windows.Forms.Label();
+            this.errorModelo = new System.Windows.Forms.Label();
+            this.errorMarca = new System.Windows.Forms.Label();
+            this.errorColor = new System.Windows.Forms.Label();
+            this.errorSerie = new System.Windows.Forms.Label();
+            this.errorDescripcion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -214,6 +227,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(216, 20);
             this.txtNombre.TabIndex = 15;
+            this.txtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
             // txtTelefono
             // 
@@ -221,6 +235,8 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(216, 20);
             this.txtTelefono.TabIndex = 16;
+            this.txtTelefono.TextChanged += new System.EventHandler(this.TxtTelefono_TextChanged);
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTelefono_KeyPress);
             // 
             // txtApellido
             // 
@@ -228,6 +244,7 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(216, 20);
             this.txtApellido.TabIndex = 17;
+            this.txtApellido.TextChanged += new System.EventHandler(this.TxtApellido_TextChanged);
             // 
             // txtDireccion
             // 
@@ -235,20 +252,7 @@
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(216, 20);
             this.txtDireccion.TabIndex = 18;
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(215, 276);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(216, 20);
-            this.txtFecha.TabIndex = 19;
-            // 
-            // txtFechaRegreso
-            // 
-            this.txtFechaRegreso.Location = new System.Drawing.Point(236, 314);
-            this.txtFechaRegreso.Name = "txtFechaRegreso";
-            this.txtFechaRegreso.Size = new System.Drawing.Size(195, 20);
-            this.txtFechaRegreso.TabIndex = 20;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.TxtDireccion_TextChanged);
             // 
             // txtEquipo
             // 
@@ -256,6 +260,7 @@
             this.txtEquipo.Name = "txtEquipo";
             this.txtEquipo.Size = new System.Drawing.Size(216, 20);
             this.txtEquipo.TabIndex = 21;
+            this.txtEquipo.TextChanged += new System.EventHandler(this.TxtEquipo_TextChanged);
             // 
             // txtModelo
             // 
@@ -263,6 +268,7 @@
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(216, 20);
             this.txtModelo.TabIndex = 22;
+            this.txtModelo.TextChanged += new System.EventHandler(this.TxtModelo_TextChanged);
             // 
             // txtMarca
             // 
@@ -270,6 +276,7 @@
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(216, 20);
             this.txtMarca.TabIndex = 23;
+            this.txtMarca.TextChanged += new System.EventHandler(this.TxtMarca_TextChanged);
             // 
             // txtColor
             // 
@@ -277,6 +284,7 @@
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(216, 20);
             this.txtColor.TabIndex = 24;
+            this.txtColor.TextChanged += new System.EventHandler(this.TxtColor_TextChanged);
             // 
             // txtSerie
             // 
@@ -284,6 +292,7 @@
             this.txtSerie.Name = "txtSerie";
             this.txtSerie.Size = new System.Drawing.Size(216, 20);
             this.txtSerie.TabIndex = 25;
+            this.txtSerie.TextChanged += new System.EventHandler(this.TxtSerie_TextChanged);
             // 
             // txtDescripcion
             // 
@@ -292,6 +301,7 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(288, 91);
             this.txtDescripcion.TabIndex = 26;
+            this.txtDescripcion.TextChanged += new System.EventHandler(this.TxtDescripcion_TextChanged);
             // 
             // btnBuscar
             // 
@@ -307,8 +317,9 @@
             this.txtMotivoCancelacion.Location = new System.Drawing.Point(48, 380);
             this.txtMotivoCancelacion.Multiline = true;
             this.txtMotivoCancelacion.Name = "txtMotivoCancelacion";
-            this.txtMotivoCancelacion.Size = new System.Drawing.Size(394, 47);
+            this.txtMotivoCancelacion.Size = new System.Drawing.Size(383, 47);
             this.txtMotivoCancelacion.TabIndex = 29;
+            this.txtMotivoCancelacion.TextChanged += new System.EventHandler(this.TxtMotivoCancelacion_TextChanged);
             // 
             // lblMotivoCancelacion
             // 
@@ -328,7 +339,168 @@
             this.btnSolicitud.TabIndex = 31;
             this.btnSolicitud.Text = "Solicitud";
             this.btnSolicitud.UseVisualStyleBackColor = true;
-            this.btnSolicitud.Click += new System.EventHandler(this.btnSolicitud_Click);
+            this.btnSolicitud.Click += new System.EventHandler(this.BtnSolicitud_Click);
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFecha.Location = new System.Drawing.Point(215, 276);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(216, 20);
+            this.dtpFecha.TabIndex = 32;
+            this.dtpFecha.Value = new System.DateTime(2019, 5, 27, 0, 0, 0, 0);
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.DtpFecha_ValueChanged);
+            // 
+            // dtpFechaRegreso
+            // 
+            this.dtpFechaRegreso.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechaRegreso.Location = new System.Drawing.Point(236, 313);
+            this.dtpFechaRegreso.Name = "dtpFechaRegreso";
+            this.dtpFechaRegreso.Size = new System.Drawing.Size(195, 20);
+            this.dtpFechaRegreso.TabIndex = 33;
+            // 
+            // errorNombre
+            // 
+            this.errorNombre.AutoSize = true;
+            this.errorNombre.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorNombre.ForeColor = System.Drawing.Color.Red;
+            this.errorNombre.Location = new System.Drawing.Point(28, 128);
+            this.errorNombre.Name = "errorNombre";
+            this.errorNombre.Size = new System.Drawing.Size(19, 22);
+            this.errorNombre.TabIndex = 34;
+            this.errorNombre.Text = "*";
+            // 
+            // errorApellido
+            // 
+            this.errorApellido.AutoSize = true;
+            this.errorApellido.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorApellido.ForeColor = System.Drawing.Color.Red;
+            this.errorApellido.Location = new System.Drawing.Point(28, 164);
+            this.errorApellido.Name = "errorApellido";
+            this.errorApellido.Size = new System.Drawing.Size(19, 22);
+            this.errorApellido.TabIndex = 35;
+            this.errorApellido.Text = "*";
+            // 
+            // errorTelefono
+            // 
+            this.errorTelefono.AutoSize = true;
+            this.errorTelefono.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorTelefono.ForeColor = System.Drawing.Color.Red;
+            this.errorTelefono.Location = new System.Drawing.Point(28, 201);
+            this.errorTelefono.Name = "errorTelefono";
+            this.errorTelefono.Size = new System.Drawing.Size(19, 22);
+            this.errorTelefono.TabIndex = 36;
+            this.errorTelefono.Text = "*";
+            // 
+            // errorDireccion
+            // 
+            this.errorDireccion.AutoSize = true;
+            this.errorDireccion.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorDireccion.ForeColor = System.Drawing.Color.Red;
+            this.errorDireccion.Location = new System.Drawing.Point(28, 236);
+            this.errorDireccion.Name = "errorDireccion";
+            this.errorDireccion.Size = new System.Drawing.Size(19, 22);
+            this.errorDireccion.TabIndex = 37;
+            this.errorDireccion.Text = "*";
+            // 
+            // errorFecha
+            // 
+            this.errorFecha.AutoSize = true;
+            this.errorFecha.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorFecha.ForeColor = System.Drawing.Color.Red;
+            this.errorFecha.Location = new System.Drawing.Point(28, 279);
+            this.errorFecha.Name = "errorFecha";
+            this.errorFecha.Size = new System.Drawing.Size(19, 22);
+            this.errorFecha.TabIndex = 38;
+            this.errorFecha.Text = "*";
+            // 
+            // errorFechaRetorno
+            // 
+            this.errorFechaRetorno.AutoSize = true;
+            this.errorFechaRetorno.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorFechaRetorno.ForeColor = System.Drawing.Color.Red;
+            this.errorFechaRetorno.Location = new System.Drawing.Point(28, 311);
+            this.errorFechaRetorno.Name = "errorFechaRetorno";
+            this.errorFechaRetorno.Size = new System.Drawing.Size(19, 22);
+            this.errorFechaRetorno.TabIndex = 39;
+            this.errorFechaRetorno.Text = "*";
+            // 
+            // errorMotivoCancelacion
+            // 
+            this.errorMotivoCancelacion.AutoSize = true;
+            this.errorMotivoCancelacion.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorMotivoCancelacion.ForeColor = System.Drawing.Color.Red;
+            this.errorMotivoCancelacion.Location = new System.Drawing.Point(28, 355);
+            this.errorMotivoCancelacion.Name = "errorMotivoCancelacion";
+            this.errorMotivoCancelacion.Size = new System.Drawing.Size(19, 22);
+            this.errorMotivoCancelacion.TabIndex = 40;
+            this.errorMotivoCancelacion.Text = "*";
+            // 
+            // errorEquipo
+            // 
+            this.errorEquipo.AutoSize = true;
+            this.errorEquipo.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorEquipo.ForeColor = System.Drawing.Color.Red;
+            this.errorEquipo.Location = new System.Drawing.Point(456, 127);
+            this.errorEquipo.Name = "errorEquipo";
+            this.errorEquipo.Size = new System.Drawing.Size(19, 22);
+            this.errorEquipo.TabIndex = 41;
+            this.errorEquipo.Text = "*";
+            // 
+            // errorModelo
+            // 
+            this.errorModelo.AutoSize = true;
+            this.errorModelo.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorModelo.ForeColor = System.Drawing.Color.Red;
+            this.errorModelo.Location = new System.Drawing.Point(456, 164);
+            this.errorModelo.Name = "errorModelo";
+            this.errorModelo.Size = new System.Drawing.Size(19, 22);
+            this.errorModelo.TabIndex = 42;
+            this.errorModelo.Text = "*";
+            // 
+            // errorMarca
+            // 
+            this.errorMarca.AutoSize = true;
+            this.errorMarca.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorMarca.ForeColor = System.Drawing.Color.Red;
+            this.errorMarca.Location = new System.Drawing.Point(456, 201);
+            this.errorMarca.Name = "errorMarca";
+            this.errorMarca.Size = new System.Drawing.Size(19, 22);
+            this.errorMarca.TabIndex = 43;
+            this.errorMarca.Text = "*";
+            // 
+            // errorColor
+            // 
+            this.errorColor.AutoSize = true;
+            this.errorColor.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorColor.ForeColor = System.Drawing.Color.Red;
+            this.errorColor.Location = new System.Drawing.Point(456, 235);
+            this.errorColor.Name = "errorColor";
+            this.errorColor.Size = new System.Drawing.Size(19, 22);
+            this.errorColor.TabIndex = 44;
+            this.errorColor.Text = "*";
+            // 
+            // errorSerie
+            // 
+            this.errorSerie.AutoSize = true;
+            this.errorSerie.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorSerie.ForeColor = System.Drawing.Color.Red;
+            this.errorSerie.Location = new System.Drawing.Point(456, 279);
+            this.errorSerie.Name = "errorSerie";
+            this.errorSerie.Size = new System.Drawing.Size(19, 22);
+            this.errorSerie.TabIndex = 45;
+            this.errorSerie.Text = "*";
+            // 
+            // errorDescripcion
+            // 
+            this.errorDescripcion.AutoSize = true;
+            this.errorDescripcion.Font = new System.Drawing.Font("Californian FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorDescripcion.ForeColor = System.Drawing.Color.Red;
+            this.errorDescripcion.Location = new System.Drawing.Point(456, 313);
+            this.errorDescripcion.Name = "errorDescripcion";
+            this.errorDescripcion.Size = new System.Drawing.Size(19, 22);
+            this.errorDescripcion.TabIndex = 46;
+            this.errorDescripcion.Text = "*";
             // 
             // FrmSolicitud
             // 
@@ -336,6 +508,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.errorDescripcion);
+            this.Controls.Add(this.errorSerie);
+            this.Controls.Add(this.errorColor);
+            this.Controls.Add(this.errorMarca);
+            this.Controls.Add(this.errorModelo);
+            this.Controls.Add(this.errorEquipo);
+            this.Controls.Add(this.errorMotivoCancelacion);
+            this.Controls.Add(this.errorFechaRetorno);
+            this.Controls.Add(this.errorFecha);
+            this.Controls.Add(this.errorDireccion);
+            this.Controls.Add(this.errorTelefono);
+            this.Controls.Add(this.errorApellido);
+            this.Controls.Add(this.errorNombre);
+            this.Controls.Add(this.dtpFechaRegreso);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.btnSolicitud);
             this.Controls.Add(this.lblMotivoCancelacion);
             this.Controls.Add(this.txtMotivoCancelacion);
@@ -346,8 +533,6 @@
             this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.txtEquipo);
-            this.Controls.Add(this.txtFechaRegreso);
-            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtTelefono);
@@ -396,8 +581,6 @@
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtFecha;
-        private System.Windows.Forms.TextBox txtFechaRegreso;
         private System.Windows.Forms.TextBox txtEquipo;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.TextBox txtMarca;
@@ -408,5 +591,20 @@
         private System.Windows.Forms.TextBox txtMotivoCancelacion;
         private System.Windows.Forms.Label lblMotivoCancelacion;
         private System.Windows.Forms.Button btnSolicitud;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.DateTimePicker dtpFechaRegreso;
+        private System.Windows.Forms.Label errorNombre;
+        private System.Windows.Forms.Label errorApellido;
+        private System.Windows.Forms.Label errorTelefono;
+        private System.Windows.Forms.Label errorDireccion;
+        private System.Windows.Forms.Label errorFecha;
+        private System.Windows.Forms.Label errorFechaRetorno;
+        private System.Windows.Forms.Label errorMotivoCancelacion;
+        private System.Windows.Forms.Label errorEquipo;
+        private System.Windows.Forms.Label errorModelo;
+        private System.Windows.Forms.Label errorMarca;
+        private System.Windows.Forms.Label errorColor;
+        private System.Windows.Forms.Label errorSerie;
+        private System.Windows.Forms.Label errorDescripcion;
     }
 }

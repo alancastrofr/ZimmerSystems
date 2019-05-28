@@ -55,3 +55,15 @@ C:\Users\alan.castro.STKPROJECTS\Desktop\ZimmerSystems\CODE\ZimmerSystems\obj\De
 C:\Users\alan.castro.STKPROJECTS\Desktop\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.csproj.CoreCompileInputs.cache
 C:\Users\alan.castro.STKPROJECTS\Desktop\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.exe
 C:\Users\alan.castro.STKPROJECTS\Desktop\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.pdb
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.csprojAssemblyReference.cache
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.FrmCalendario.resources
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.FrmHistorial.resources
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.FrmInicio.resources
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.FrmMenuPrincipal.resources
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.FrmReporte.resources
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.FrmSolicitud.resources
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.Properties.Resources.resources
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.csproj.GenerateResource.cache
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.csproj.CoreCompileInputs.cache
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.exe
+C:\Users\alan.castro.STKPROJECTS\Desktop\TEST\ZimmerSystems\CODE\ZimmerSystems\obj\Debug\ZimmerSystems.pdb
