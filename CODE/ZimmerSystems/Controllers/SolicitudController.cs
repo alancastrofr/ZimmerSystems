@@ -29,13 +29,12 @@ namespace ZimmerSystems.Controllers
                 using (SqlConnection Conn = Conection.ObtnerConecion())
                 {
                     SqlCommand comando = new SqlCommand(string.Format(
-                        "INSERT INTO CAT_QUESET (FOLIO, NAME, LAST_NAME, PHONE, ADDRESS, DATE, DATE_SOLUTION, EQUIPMENTID, MODEL, BRAND, COLOR, S_N, STATUS) " +
+                        "INSERT INTO CAT_QUESET (FOLIO, NAME, LAST_NAME, PHONE, ADDRESS, DATE, DATE_SOLUTION, EQUIPMENTID, MODEL, BRAND, COLOR, S_N,ERROR_DESCRIPTION, STATUS) " +
                                 " VALUES ('{0}', '{1}', '{2}', '{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}') ", requestVM.Folio, requestVM.Name, requestVM.LastName, requestVM.Phone, 
-                                                                                                                                requestVM.Address, requestVM.Date, requestVM.DateSolution, requestVM.EquipmentID, requestVM.Model, requestVM.Brand, requestVM.Color, requestVM.S_N, requestVM.Status), Conn);
+                                                                                                                                requestVM.Address, requestVM.Date, requestVM.DateSolution, requestVM.EquipmentID, requestVM.Model, requestVM.Brand, requestVM.Color, requestVM.S_N, requestVM.ErrorDescription, requestVM.Status), Conn);
                     if (comando.ExecuteNonQuery() > 0)
                     {
                         Exitoso = true;
-
                     }
                    
                     Conn.Close();
@@ -72,7 +71,7 @@ namespace ZimmerSystems.Controllers
                 using (SqlConnection Conn = Conection.ObtnerConecion())
                 {
                     SqlCommand comando = new SqlCommand(string.Format(
-                        "UPDATE CAT_QUESET PHONE = '{0}', DATE_SOLUTION = '{1}' , ERROR_DESCRIPTION = '{2}' WHERE ID = '{3}'", requestVM.Phone, requestVM.DateSolution, requestVM.ErrorDescription, requestVM.Folio), Conn);
+                        "UPDATE CAT_QUESET PHONE = '{0}', DATE_SOLUTION = '{1}' , ERROR_DESCRIPTION = '{2}' WHERE FOLIO = '{3}'", requestVM.Phone, requestVM.DateSolution, requestVM.ErrorDescription, requestVM.Folio), Conn);
                     if (comando.ExecuteNonQuery() > 0)
                     {
                         validation = true;
