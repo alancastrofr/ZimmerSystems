@@ -54,5 +54,20 @@ namespace ZimmerSystems
             FrmSolicitud fr = new FrmSolicitud();
             fr.Show();
         }
+
+        private void AccercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("soporte@zimmersystems.com");
+        }
+
+        private void VersionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("1.26");
+        }
+
+        private void ContactoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("(81) 23 654 589");
+        }
     }
 }

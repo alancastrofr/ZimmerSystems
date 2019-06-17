@@ -135,18 +135,21 @@
             this.accercaDeToolStripMenuItem.Name = "accercaDeToolStripMenuItem";
             this.accercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.accercaDeToolStripMenuItem.Text = "Soporte";
+            this.accercaDeToolStripMenuItem.Click += new System.EventHandler(this.AccercaDeToolStripMenuItem_Click);
             // 
             // versionToolStripMenuItem
             // 
             this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
             this.versionToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.versionToolStripMenuItem.Text = "Version";
+            this.versionToolStripMenuItem.Click += new System.EventHandler(this.VersionToolStripMenuItem_Click);
             // 
             // contactoToolStripMenuItem
             // 
             this.contactoToolStripMenuItem.Name = "contactoToolStripMenuItem";
             this.contactoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.contactoToolStripMenuItem.Text = "Contacto";
+            this.contactoToolStripMenuItem.Click += new System.EventHandler(this.ContactoToolStripMenuItem_Click);
             // 
             // FrmMenuPrincipal
             // 
