@@ -67,17 +67,23 @@
     <Compile Include="Views\FrmCalendario.Designer.cs">
       <DependentUpon>FrmCalendario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FrmCatUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCatUser.Designer.cs">
+      <DependentUpon>FrmCatUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmHistorial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\FrmHistorial.Designer.cs">
       <DependentUpon>FrmHistorial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmInicio.cs">
+    <Compile Include="Views\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmInicio.Designer.cs">
-      <DependentUpon>FrmInicio.cs</DependentUpon>
+    <Compile Include="Views\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -105,8 +111,8 @@
     <EmbeddedResource Include="Views\FrmHistorial.resx">
       <DependentUpon>FrmHistorial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmInicio.resx">
-      <DependentUpon>FrmInicio.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>

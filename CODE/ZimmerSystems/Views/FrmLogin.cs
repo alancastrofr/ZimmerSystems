@@ -27,7 +27,7 @@ namespace ZimmerSystems
                 if (ln.ValidationEmptyText(txtUser.Text, txtPassword.Text))
                 {
                     UserVM = ln.ConsultarUsuario(txtUser.Text, txtPassword.Text);
-                    if (!UserVM.ID.Equals(null))
+                    if (!UserVM.ID.Equals(null) && !UserVM.ID.Equals(0))
                     {
                         if (UserVM.Active)
                         {

@@ -69,5 +69,15 @@ namespace ZimmerSystems
         {
             MessageBox.Show("(81) 23 654 589");
         }
+
+        private void NuevoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MarcasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
